@@ -4,23 +4,202 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Bringonstore | Home</title>
 </head>
 <body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 shadow fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Bringonstore</a>
 
-<div class="grid-container">
-  <div class="item1">BringonStore
-      <div class="menubtn">
-      <button class="btn vendor-btn"> vendor</button>
-      <button class="btn login-btn"> Login</button>
-  </div>
-</div>
-  <div class="item2">Menu</div>
-  <div class="item3">Main</div>  
-  <div class="item4">Right</div>
-  <div class="item5">Footer</div>
-</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link bringonlink">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link bringonlink">Vendor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Show section -->
+    <section class="bg-white text-dark p-5 text-center p-lg-0 pt-lg-5 text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Welcome to <span class="bringonbrand">Bringonstore</span></h1>
+                    <p class="lead my-4">
+                        Bringonstore focus to connect local shop to user near by area by the location to buy 
+                        the product and get same day delivery
+                    </p>
+
+                    <button class="btn btn-primary bringonbtn btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                        Start Buying
+                    </button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="./img/showcase.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Why bringonstore area -->
+    <section class="p-5">
+        <div class="container">
+            <h2 class="text-dark mb-5">Why Bringonstore?</h2>
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-white text-dark shadow">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <img src="./img/quality.svg" class="img-fluid">
+                            </div>
+
+                            <h3 class="card-title">
+                                Quality
+                            </h3>
+
+                            <p class="card-text">
+                                Consistency
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-white text-dark shadow">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <img src="./img/singleVendor.svg" class="img-fluid">
+                            </div>
+
+                            <h3 class="card-title">
+                                Vendors
+                            </h3>
+
+                            <p class="card-text">
+                                Marketplace
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-white text-dark shadow">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <img src="./img/nextDay.svg" class="img-fluid">
+                            </div>
+
+                            <h3 class="card-title">
+                                One Day
+                            </h3>
+
+                            <p class="card-text">
+                                Delivery
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How its work -->
+    <section id="learn" class="p-5">
+        <div class="container">
+            <h2 class="text-dark mb-5">How Its Work?</h2>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="./img/fundamentals.svg" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-md p-5">
+                    <!-- Right Area -->
+                    <ul class="list-group">
+                        <li class="list-group-item bg-white border-0 "> <a class="dropdown-item bg-white fs-5 linkafter" href="#" id="link-item"><i class="fa fa-arrow-right"></i>  Create an account</a></li>
+                        <li class="list-group-item bg-white border-0 "> <a class="dropdown-item bg-white fs-5 linkafter" href="#" id="link-item"> <i class="fa fa-arrow-right"></i>  Select from over 1200+ ingredients and kitchen products</a></li>
+                        <li class="list-group-item bg-white border-0 "> <a class="dropdown-item bg-white fs-5 linkafter" href="#" id="link-item"> <i class="fa fa-arrow-right"></i> Place the order and pay via Credit Card, Debit Card, Netbanking or UPI</a> </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ area -->
+    <section id="question" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Frequently Asked Question
+            </h2>
+
+            <div class="accordion accordion-flush" id="questions">
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="question-one">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                      Where exactly are you located?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="question-one" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur quia aliquam, sint expedita error quod architecto odit ipsa quisquam laborum dicta aliquid earum commodi laboriosam natus aspernatur exercitationem dignissimos eos veniam. Natus magni aliquam voluptate. Non quae, suscipit dolor, beatae quisquam veniam excepturi rerum tempore error tempora, saepe aliquam.</div>
+                  </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="question-two">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                      How are you?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="question-two" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum facilis obcaecati quasi cupiditate amet voluptates in debitis molestiae distinctio consectetur asperiores esse minus tempora blanditiis, ex voluptatibus, maxime molestias sequi nemo deserunt, modi nobis. Repellat quam quibusdam voluptate quos deserunt?</div>
+                  </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="question-three">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                      How Website work
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="question-three" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse distinctio sapiente non laboriosam nihil quibusdam magni earum quaerat perferendis vitae.</div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 Bringonstore</p>
+
+            <a href="" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h5"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
 </body>
 </html>
