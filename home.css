@@ -26,4 +26,13 @@ body::before {
 .linkafter::after{
 color: crimson;
 }
+/* .my-row{
+  border: 2px solid red;
+}
+.my-col{
+  border: 2px solid green; 
+} */
 
+.card{
+  border-radius: 15px;
+}
